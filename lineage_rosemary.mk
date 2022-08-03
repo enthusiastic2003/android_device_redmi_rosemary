@@ -16,7 +16,7 @@
 
 # Common AOSP base
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product,  vendor/halium/config/halium.mk)
 
 # Inherit some common LineageOS stuff.
 #$(call inherit-product, $(CUSTOM_VENDOR_DIR)/config/common_full_phone.mk)
@@ -28,12 +28,12 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # These variables are usually controlled by CI and/or build system if
 # they aren't overridden here.
 
-KASUMI_SHIP_LAWNCHAIR := true
-KASUMI_SHIP_ADAWAY := true
-KASUMI_INCLUDE_GCGOP := true
+#KASUMI_SHIP_LAWNCHAIR := true
+#KASUMI_SHIP_ADAWAY := true
+#KASUMI_INCLUDE_GCGOP := true
 
 # GApps
-TARGET_GAPPS_ARCH := arm64
+#TARGET_GAPPS_ARCH := arm64
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
