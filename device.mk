@@ -55,7 +55,11 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@5.0-impl \
     android.hardware.soundtrigger@2.2-impl \
     audio.a2dp.default \
-    tinymix
+    tinymix \
+    android.hardware.media.omx@1.0-service
+ 
+PRODUCT_COPY_FILES += \
+    device/redmi/rosemary/seccomp_policy/crash_dump.arm.policy:system/etc/seccomp_policy/crash_dump.arm.policy
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
